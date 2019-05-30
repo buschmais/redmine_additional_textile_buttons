@@ -1,5 +1,5 @@
 <%
-   if content_for(:header_tags)&.include? 'jstoolbar/textile'
+if content_for(:header_tags)&.include?('jstoolbar/textile') || content_for(:header_tags)&.include?('jstoolbar/jstoolbar-textile.min')
      content_for :header_tags do
        javascript_include_tag('redmine_additional_textile_buttons.js', plugin: 'redmine_additional_textile_buttons') +
        stylesheet_link_tag('redmine_additional_textile_buttons.css', plugin: 'redmine_additional_textile_buttons')
