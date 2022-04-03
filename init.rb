@@ -1,4 +1,4 @@
-require 'redmine_additional_textile_buttons_ext'
+require_relative './lib/redmine_additional_textile_buttons_ext'
 
 Redmine::Plugin.register :redmine_additional_textile_buttons do
   name 'Additional Textile Editor Buttons'
